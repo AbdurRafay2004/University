@@ -14,14 +14,17 @@ int main()
     if( worked < 0 )
     {
         printf("Hours cannot be negative");
-
-        if(worked > 168)
-           {
-            printf("Impossible to work more than 168 hours");
-           }
     }
-    else
+    else if(worked > 168)
     {
-        printf("cons");
+        printf("Impossible to work more than 168 hours");
+    }
+    else if(worked <= 40)
+    {
+        printf("This weeks pay: %d", worked*200);
+    }
+    else if(worked > 40)
+    {
+        printf("This weeks pay: %d", 8000+((worked-40)*300));
     }
 }
