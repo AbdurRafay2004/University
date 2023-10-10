@@ -11,17 +11,19 @@ int main()
     printf("Hours worked this week: ");
     scanf("%d", &worked);
 
-    if( worked < 0 )
+    if( worked < 0 || worked > 168)
     {
-        printf("Hours cannot be negative");
+        if(worked > 168)
+        {
+            printf("Impossible to work more than 168 hours");
+        }
+        else
+            printf("Hours cannot be negative");
     }
-    else if(worked > 168)
-    {
-        printf("Impossible to work more than 168 hours");
-    }
+    
     else if(worked <= 40)
     {
-        printf("This weeks pay: %d", worked*200);
+        printf("This weeks pay: %d", worked*200);   //solved the math together
     }
     else if(worked > 40)
     {
