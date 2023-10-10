@@ -12,7 +12,7 @@ int main()
     else if(num2 > num1){
         printf("\nSecond number is greater\n");
     }
-    else
+    else 
         printf("\nThe numbers are equal\n");
 
 
