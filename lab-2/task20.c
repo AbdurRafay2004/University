@@ -5,9 +5,9 @@ int main()
     printf("Enter a number: ");
     scanf("%d", &number);
     
-    if(!(number % 2 == 0 || number % 5 == 0))
+    // if(!(number % 2 == 0 || number % 5 == 0))
     //if (number % 2 != 0 && number % 5 !=0 ) 
-    //if (!(number % 2 == 0) && !(number % 5 == 0))
+    if (!(number % 2 == 0) && !(number % 5 == 0))
     {
         printf("%d",number);
     }
