@@ -14,6 +14,6 @@ int main()
 
     int seconds = (useconds % 3600) % 60;
     
-    printf("%d Hours %d Minutes %d Seconds\n", hours);
+    printf("%d Hours %d Minutes %d Seconds\n", hours, minutes, seconds);
     return 0;
 }
