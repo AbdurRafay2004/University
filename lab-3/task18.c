@@ -7,8 +7,8 @@ int main() {
     printf("Enter the length of the rectangle: ");
     scanf("%d", &n);
     for (int i = 0; i < m; i++) {
-        for (int j = 1; j <= n; j++) {
-            printf("%d", j);
+        for (int j = 0; j < n; j++) {
+            printf("%d", j+1);
         }
         printf("\n");
     }
