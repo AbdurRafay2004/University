@@ -14,11 +14,30 @@ int main()
             i++;
         }
     
-    printf("Square of all items in the array\n");
+    printf("\nGiven array\n");
+    printf("[");
     for(i=0; i<items; i++)
         {
-            
+            printf("%d", array[i]);
+            if(i!=items-1)
+                {
+                    printf(", ");
+                }
         }
+    printf("]");
+    
+    printf("\n\nSquare of all items in the array\n");
+
+    printf("[");
+    for(i=0; i<items; i++)
+        {
+            printf("%d", array[i]*array[i]);
+            if(i!=items-1)
+                {
+                    printf(", ");
+                }
+        }
+    printf("]\n\n\n");
 
 
 
