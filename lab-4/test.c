@@ -1,41 +1,25 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
-    char arr[][20] = {"hey", "there", "", "what's", "", "up", "", "?"};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    // printf("\n\n%d\n\n", n);
-    char new_arr[n][20];
-    int j = 0;
-
-    printf("Original Array: [");
-
-    for (int i = 0; i < n; i++)
-        {
-            printf("'%s'", arr[i]);
-            if (i != n - 1) 
-                {
-                    printf(", ");
-                }
-            if (strcmp(arr[i], "") != 0) 
-                {
-                    strcpy(new_arr[j], arr[i]);
-                    j++;
-                }
+    int arr1[] = {1, 4, 7, 5};
+    int arr2[] = {6, 1, 3, 9};
+    int n1 = sizeof(arr1) / sizeof(arr1[0]);
+    int n2 = sizeof(arr2) / sizeof(arr2[0]);
+    int new_arr[n1 + n2 - 1];
+    for (int i = 0; i < n1 + n2 - 1; i++) {
+        if (i < n1 - 1) {
+            new_arr[i] = arr1[i];
+        } else {
+            new_arr[i] = arr2[i - n1 + 1];
         }
-
-    printf("]\n");
-
-    printf("Modified Array: [");
-    for (int i = 0; i < j; i++) 
-        {
-            printf("'%s'", new_arr[i]);
-            if (i != j - 1) 
-                {
-                    printf(", ");
-                }
+    }
+    printf("[");
+    for (int i = 0; i < n1 + n2 - 1; i++) {
+        printf("%d", new_arr[i]);
+        if (i != n1 + n2 - 2) {
+            printf(", ");
         }
+    }
     printf("]\n");
-
     return 0;
 }
