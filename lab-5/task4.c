@@ -5,7 +5,7 @@ int main()
     /*
     if input < 4 , taile input = input                  [printf(input);]
     if input > 3 , taile input+"er"                     [strcat(input, "er")]
-    if input > 3 && + "er" , replace "er" with "est"    [length, len-2, comp[len-2]with "er" ]
+    if input > 3 && + "er" , replace "er" with "est"    *doesnt work[length, len-2, comp[len-2]with "er" ] *alternative[strcpy[len-2]]
     if input > 3 && + "est" , input = input                     ||
     */
     char str[100];
