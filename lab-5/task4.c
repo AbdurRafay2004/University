@@ -23,6 +23,18 @@ int main()
     else if (len>3)
         {
             if(strcmp(&str[len-2], "er")==0)
+            /*&str[len-2] r str + len-2 same meaning
+            eta dara bojhay str er {len - 2 (assuming len-2=3)} 3 number character(index 4) 
+            theke '\0'(null character) pawa porjonto read korte thakbe.
+            for example
+
+            str = "abcdef", length = 6
+            then, str+len-2  = ef
+            cause, len -2 = 6-2 = 4 , so, str+4 = ef (it will read from the strings 4th character(means 5th index). index -> a(1st/first character but, index=0), b(2nd character but, index=1), c(2), d(3), e(4), f(5))
+            
+            reference for me of the future :3
+            
+            */
                 {
                     strcpy(&str[len-2], "est");
                     puts(str);
