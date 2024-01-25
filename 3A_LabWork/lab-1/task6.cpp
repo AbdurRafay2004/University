@@ -9,9 +9,10 @@ int main(){
     //question 2
     cout<<"Question 2:"<<endl;
     int x = 5;
-    int y = 5;
+    // int y = 5;
     // ++x;
-    y--;
-    cout<<"x++ = "<< x++ << endl <<"y-- = "<< y <<endl;
+    // y--;
+    cout<<"x++ = "<< x++ << endl; 
+    cout<<"x-- = "<< x-- <<endl;
     return 0;
 }
