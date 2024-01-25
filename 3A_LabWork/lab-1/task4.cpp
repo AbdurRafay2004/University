@@ -12,7 +12,11 @@ int main(){
 
     //questin 2 
     cout<< "Question 2:"<< endl;
-    bool isStudent;
-    int studentId = 1013;
+    bool isStudent = true;
+    long long int studentId = 41230201013;
+
+    cout<< "Is a student: "<< isStudent << endl << "Student ID: " << studentId << endl;
+
+    return 0;
 
 }
