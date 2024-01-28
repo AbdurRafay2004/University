@@ -21,7 +21,7 @@ int main(){
     cout<< "Square of 1 to 5: "<<endl;
     for(int i = 1; i<=5; i++){
         //formula
-        int square = pow(i,2);
+        double square = pow(i,2);
         cout<<"               "<< i << "x"<< i << " : " <<square<<endl;
     }
     return 0;
