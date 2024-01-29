@@ -14,6 +14,14 @@ int main(){
     cout<<endl;
     //question 2
     cout<<"Question 2:"<<endl;
-    
+    for (int i = 1; i <= 10; ++i) {
+        std::cout << i << " ";
+
+        // Stop the loop when it reaches 6
+        if (i == 6) {
+            std::cout << "\nStopping the loop at 6.\n";
+            break;
+        }
+    }
     return 0;
 }
