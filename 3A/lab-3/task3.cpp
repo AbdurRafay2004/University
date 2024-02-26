@@ -17,7 +17,7 @@ public:
         cout<<"Student "<<studentNo<<" created with no marks."<<endl;
     }
     //with marks
-    Student(const int &rollNumber,const string &name,const float &marks) : rollNumber(0), name(name), marks(0){
+    Student(const int &rollNumber,const string &name,const float &marks) : rollNumber(0), name(name), marks(marks){
         studentNo++;
         cout<<"Student "<<studentNo<<" created with marks "<< marks <<" ";
         calculateGrade();
