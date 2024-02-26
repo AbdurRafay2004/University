@@ -41,7 +41,7 @@ public:
 };
 
 // bank account counter
-int Account::numberOfAccounts = 0; // ClassName::staticVariable
+int Account::numberOfAccounts = 0; // data_type ClassName::staticVariable
 
 int main()
 {
